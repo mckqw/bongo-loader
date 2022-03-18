@@ -10,7 +10,7 @@
     "url": "https://github.com/pugjs/pug.git"
   },
   "scripts": {
-    "build": "browserify -t brfs -t browserify-css export.js -o pug.js "
+    "build": "browserify -t brfs -t browserify-css index.js -o export.js "
   },
   "jest": {
     "testEnvironment": "node",
