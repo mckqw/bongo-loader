@@ -13,7 +13,8 @@ const fs = require('fs');
 const css = require('./assets/styles/styles.css');
 
 // svg/html template to inject
-const content = fs.readFileSync(__dirname + '/assets/templates/content.html', 'utf8');
+const templateName = 'content.html';
+const content = fs.readFileSync(`${__dirname}/assets/templates/${templateName}`, 'utf8');
 
 // class to
 const classToReplace = '.js-log-animation';
